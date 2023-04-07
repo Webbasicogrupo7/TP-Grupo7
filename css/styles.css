@@ -37,13 +37,7 @@
                 padding: 0;
             }
             
-            .modifica_li {
-                display: block;
-                height: 40px;
-                width: 101.25px;
-                margin: 0px;
-                font-size: 20px;
-            }
+           
             
             #lista1 li:hover {
                 background-color: rgb(109, 38, 109);
