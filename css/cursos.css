@@ -6,3 +6,11 @@
     border-radius:10px;
     
 }
+
+.centrarCalesita {
+display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  /* min-width:300px; */
+}
