@@ -1,77 +1,128 @@
-            html {
-                border: 0;
-                margin: 0;
-                padding: 0;
-                height: 100vh;
-                width: 100vw;
-            }
-            
-            body {
-                height: 100vh;
-                width: 100vw;
-                margin: 0;
-                border: 0;
-                padding-top: 10px;
-            }
-            
-            header {
-                display: flex;
-            }
-            
-            #menu {
-                display: flex;
-                width: 50vw;
-            }
-            
-            #lista2 li:hover {
-                background-color: rgb(165, 251, 131);
-            }
-            
-            nav ul {
-                height: inherit;
-                display: none;
-                list-style: none;
-                font-size: 20px;
-                border: 0;
-                margin: 0;
-                padding: 0;
-            }
-            
-           
-            
-            #lista1 li:hover {
-                background-color: rgb(109, 38, 109);
-            }
-            
-            #buton1:hover {
-                background-color: rgb(52, 52, 134);
-            }
-            
-            #icono {
-                display: block;
-            }
-            
-            section {
-                height: min-content;
-                width: inherit;
-                border: 3px solid black;
-                display: block;
-                padding: 0;
-                margin: 0;
-            }
-            
-            #sector_lateral {
-                display: block;
-            }
-            
-            #sector_central {
-                display: block;
-            }
-            
-            footer {
-                display: block;
-                background-color: rgb(0, 0, 0);
-                height: 80px;
-                margin-top: 100px;
-                width: 100%;
-            }
+html {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    border: 0;
+    padding-top: 10px;
+}
+
+header {
+    display: flex;
+}
+
+#menu {
+    display: flex;
+    width: 50vw;
+}
+
+#lista2 li:hover {
+    background-color: rgb(165, 251, 131);
+}
+
+nav ul {
+    height: inherit;
+    display: none;
+    list-style: none;
+    font-size: 20px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#lista1 li:hover {
+    background-color: rgb(109, 38, 109);
+}
+
+#buton1:hover {
+    background-color: rgb(52, 52, 134);
+}
+
+#icono {
+    display: block;
+}
+
+section {
+    height: min-content;
+    width: inherit;
+    border: 3px solid black;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#principal {
+    border: 0;
+}
+
+#sector_central {
+    display: block;
+    padding-right: 20px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    margin-top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#atrapa_usuario {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    border: 0;
+}
+
+#atrapa_usuario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(130deg, rgb(78, 159, 237) 10%, rgb(175, 214, 230) 45%, rgb(212, 245, 252) 100%);
+    border-radius: 3%;
+    padding: 2rem;
+    box-shadow: 4px 4px 8px;
+    height: 550px;
+}
+
+#regalo {
+    height: 50px;
+    width: 75%;
+    padding-top: 5px;
+    margin-left: 15%;
+    border-radius: 15px;
+    margin-top: 25px;
+    background-color: red;
+}
+
+footer a i {
+    font-size: 40px;
+    color: blanchedalmond;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+footer div {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 776px) {
+    #atrapa_usuario {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
