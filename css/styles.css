@@ -21,6 +21,7 @@ header {
 #menu {
     display: flex;
     width: 50vw;
+   
 }
 
 #lista2 li:hover {
