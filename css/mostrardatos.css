@@ -1,13 +1,26 @@
 button {
     width: 160px;
-    border: none;
+    border:blue;
+    border-style:solid;
+    border-width:0.4px;
     height: 25px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px;
+    background-color: cyan;
+    margin-left:80%;
+    margin-top: 50px;
+    
+ 
+    
   }
   
   button:active {
     box-shadow: none;
+  }
+  button:hover {
+    background-color: rgb(20, 136, 136);
+    color: white;
+ 
   }
 
   h2 {
@@ -24,4 +37,14 @@ button {
   h1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  table {
+    background-color: rgb(238, 238, 131);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body{
+    border-color:green;
+    background-color:rgb(219, 219, 219);
   }
