@@ -1,16 +1,33 @@
-.slide {
-    margin-top:10px;
-}
-.slide img{
-    height: 280px;
-    border-radius:10px;
-    
+.imgCursos {
+  width:100%;
+}  
+
+#volverCursos {
+  width: 160px;
+  border:blue;
+  border-style:solid;
+  border-width:0.4px;
+  height: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px;
+  background-color: cyan;
+  margin-left:50%;
+  margin-top: 50px;
+
 }
 
-.centrarCalesita {
-display: flex;
-  align-items: center;
-  justify-content: center;
-  /* min-height: 100vh; */
-  /* min-width:300px; */
+#volverCursos:active {
+  box-shadow: none;
 }
+#volverCursos:hover {
+  background-color: rgb(20, 136, 136);
+  color: white;
+
+}
+
+/* .cOficina { */
+  /* display:flexbox;
+align-items: stretch; */
+  /* align-items: center;
+  justify-content: center; */
+/* } */
