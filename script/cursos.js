@@ -17,6 +17,13 @@ function accionCursos(e) {
         case "of1":
             // Muestra y visualiza secciones
             document.getElementById("cOficina").style.display = "none";
+            document.getElementById("cProgramacion").style.display = "none";
+            document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
+
+
             document.getElementById("textoOficina").style.display = "";
 
             //Modifica Elementos del formulario
@@ -28,6 +35,11 @@ function accionCursos(e) {
         case "of2":
             // Muestra y visualiza secciones
             document.getElementById("cOficina").style.display = "none";
+            document.getElementById("cProgramacion").style.display = "none";
+            document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoOficina").style.display = "";
 
             //Modifica Elementos del formulario
@@ -54,6 +66,11 @@ function accionCursos(e) {
         case "of3":
             // Muestra y visualiza secciones
             document.getElementById("cOficina").style.display = "none";
+            document.getElementById("cProgramacion").style.display = "none";
+            document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoOficina").style.display = "";
 
             //Modifica Elementos del formulario
@@ -72,6 +89,11 @@ function accionCursos(e) {
         case "of4":
             // Muestra y visualiza secciones
             document.getElementById("cOficina").style.display = "none";
+            document.getElementById("cProgramacion").style.display = "none";
+            document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoOficina").style.display = "";
 
             //Modifica Elementos del formulario
@@ -90,7 +112,12 @@ function accionCursos(e) {
             break;
         case "prg1":
             // Muestra y visualiza secciones
+            document.getElementById("cOficina").style.display = "none";
             document.getElementById("cProgramacion").style.display = "none";
+            document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoProgramacion").style.display = "";
 
             //Modifica Elementos del formulario
@@ -100,7 +127,12 @@ function accionCursos(e) {
             break;
         case "prg2":
             // Muestra y visualiza secciones
+            document.getElementById("cOficina").style.display = "none";
             document.getElementById("cProgramacion").style.display = "none";
+            document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoProgramacion").style.display = "";
 
             //Modifica Elementos del formulario
@@ -110,7 +142,12 @@ function accionCursos(e) {
             break;
         case "prg3":
             // Muestra y visualiza secciones
+            document.getElementById("cOficina").style.display = "none";
             document.getElementById("cProgramacion").style.display = "none";
+            document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoProgramacion").style.display = "";
 
             //Modifica Elementos del formulario
@@ -120,7 +157,12 @@ function accionCursos(e) {
             break;
         case "prg4":
             // Muestra y visualiza secciones
+            document.getElementById("cOficina").style.display = "none";
             document.getElementById("cProgramacion").style.display = "none";
+            document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoProgramacion").style.display = "";
 
             //Modifica Elementos del formulario
@@ -130,7 +172,12 @@ function accionCursos(e) {
             break;
         case "idiom1":
             // Muestra y visualiza secciones
+            document.getElementById("cOficina").style.display = "none";
+            document.getElementById("cProgramacion").style.display = "none";
             document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoIdioma").style.display = "";
 
             //Modifica Elementos del formulario
@@ -140,7 +187,12 @@ function accionCursos(e) {
             break;
         case "idiom2":
             // Muestra y visualiza secciones
+            document.getElementById("cOficina").style.display = "none";
+            document.getElementById("cProgramacion").style.display = "none";
             document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoIdioma").style.display = "";
 
             //Modifica Elementos del formulario
@@ -150,7 +202,12 @@ function accionCursos(e) {
             break;
         case "idiom3":
             // Muestra y visualiza secciones
+            document.getElementById("cOficina").style.display = "none";
+            document.getElementById("cProgramacion").style.display = "none";
             document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
             document.getElementById("textoIdioma").style.display = "";
 
             //Modifica Elementos del formulario
@@ -161,7 +218,13 @@ function accionCursos(e) {
             break;
         case "idiom4":
             // Muestra y visualiza secciones
+            document.getElementById("cOficina").style.display = "none";
+            document.getElementById("cProgramacion").style.display = "none";
             document.getElementById("cIdioma").style.display = "none";
+            document.getElementById("tituloSeccionOficina").style.display = "none";
+            document.getElementById("tituloSeccionProgramacion").style.display = "none";
+            document.getElementById("tituloSeccionIdiomas").style.display = "none";
+
             document.getElementById("textoIdioma").style.display = "";
 
             //Modifica Elementos del formulario

@@ -1,17 +1,17 @@
 .imgCursos {
-  width:100%;
-}  
+  width: 100%;
+}
 
 #volverCursos {
   width: 160px;
-  border:blue;
-  border-style:solid;
-  border-width:0.4px;
+  border: blue;
+  border-style: solid;
+  border-width: 0.4px;
   height: 25px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px;
   background-color: cyan;
-  margin-left:50%;
+  margin-left: 50%;
   margin-top: 50px;
 
 }
@@ -19,21 +19,64 @@
 #volverCursos:active {
   box-shadow: none;
 }
+
 #volverCursos:hover {
   background-color: rgb(20, 136, 136);
   color: white;
 
 }
 
-/* .cOficina { */
-  /* display:flexbox;
-align-items: stretch; */
-  /* align-items: center;
-  justify-content: center; */
-/* } */
-
 #sector_central {
+  padding: 15px;
+}
 
-  padding:25px;
+.cOficina {
 
+  display: grid;
+}
+
+@media only screen and (max-width:600px) {
+  .cOficina {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width:600px) {
+  .cOficina {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cProgramacion {
+
+  display: grid;
+}
+
+@media only screen and (max-width:600px) {
+  .cProgramacion {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width:600px) {
+  .cProgramacion {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cIdioma {
+
+  display: grid;
+}
+
+@media only screen and (max-width:600px) {
+  .cIdioma {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width:600px) {
+  .cIdioma {
+    grid-template-columns: 1fr 1fr;
+  }
 }
