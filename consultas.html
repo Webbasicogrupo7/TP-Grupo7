@@ -27,7 +27,7 @@
                     Menú
                 </button>
 
-                <ul id="lista1" class="dropdown-menu aria-labelledby dropdownMenuButton1 d-lg-none ">
+                <ul id="lista1" class="dropdown-menu aria-labelledby dropdownMenuButton1 d-md-none ">
                     <li><a class="dropdown-item .modifica_li " href="index.html">Inicio</a></li>
                     <li><a class="dropdown-item " href="# ">Institucional</a></li>
                     <li><a class="dropdown-item " href="equipo.html">Equipo</a></li>
@@ -48,9 +48,19 @@
     </header>
     <!-- Seccion central de la página-->
     <section id="principal " class="d-md-flex">
+<<<<<<< HEAD
         <div id="sector_central " class="h-100 col-sm-12 col-md-12 col-lg-12 m-0 justify-content-center align-items-center ">
             <p id="parrafo1 ">FORMULARIO DE CONSULTAS</p>
 
+=======
+        <div id="sector_central "
+            class="h-100 col-sm-12 col-md-12 col-lg-12 m-0 justify-content-center align-items-center " >
+            
+            <h4 id="parrafo1 ">FORMULARIO DE CONSULTAS</h4>
+    <div class="ubicacion-contenedor">
+        <div class="grid-item"></div>
+        <div class="gridUbicacFormulario">
+>>>>>>> da1deece7d734d895ac4f5b84003ae129305ca6a
             <form class="formulario" action="mostrarDatos.html" targer="_blank">
                 <table id="tabla">
                     <tr>
@@ -107,13 +117,16 @@
                             <label for="consulta">Consulta:</label>
                         </td>
                         <td>
-                            <input type="textArea" name="consulta" rows="4">
+                            <!-- <input type="textarea" name="consulta"  cols="50"> -->
+                            <textarea  name="consulta"rows="4" cols="50" placeholder="Ingrese aquí su consulta..." ></textarea>
                         </td>
                     </tr>
                 </table>
                 <input type="submit" value="Enviar">
             </form>
-
+            </div>
+            <div class="grid-item"></div>
+        </div>
         </div>
 
 

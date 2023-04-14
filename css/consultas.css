@@ -11,9 +11,10 @@ label {
 input[type=text],
 input[type=date],
 input[type=email],
-input[type=textArea],
+/* input[type=textArea], */
 select {
-    width: 95%; /*80 se ve bien en celulares 100 en desktop*/
+    width: 95%;
+    /*80 se ve bien en celulares 100 en desktop*/
     padding: 1vw;
     margin: 1vw;
     display: inline-block;
@@ -23,23 +24,29 @@ select {
 
 }
 
-input[type=textArea]{
-     height:150px;
-     resize: both;
-     /* width: 95%;
-     padding: 1vw;
-     margin: 1vw;
-     border: 1vw;
-     border-radius: 4px;
-     
-     box-sizing: border-box;
-   display: inline-block;
-     text-decoration-line: line-through;  */
+/* input[type=textArea]{ */
+textarea {
+    height: 200px;
+    min-height: 100px;
+    resize: both;
+    width: 95%;
+    padding: 1vw;
+    margin: 1vw;
+    border: 1vw;
+    border-radius: 4px;
+
+
+}
+
+textarea:hover {
+    border: 4vw;
+    border-color: black;
+    background-color: #e2e9af;
 }
 
 input[type=text]:hover,
 input[type=date]:hover,
-input[type=textArea]:hover,
+
 input[type=email]:hover,
 input[type=checkbox]:hover {
     border: 4vw;
@@ -75,7 +82,7 @@ input[type=submit]:hover {
     background-color: #a2e869;
     padding: 2%;
     margin: 1% 5%;
-    align-self:center;
+    align-self: center;
 }
 
 
@@ -88,10 +95,29 @@ table {
     /* background-color: black; */
 
 }
-.col1{
-    width:20%;
+
+.col1 {
+    width: 20%;
 }
 
-.col2{
-    width:80%;
+.col2 {
+    width: 80%;
 }
+
+
+.ubicacion-contenedor{
+    display: grid;
+     ;
+}
+
+@media only screen and (max-width:900px) {
+    .ubicacion-contenedor {
+        grid-template-columns: 100%;
+    }
+  }
+  
+  @media only screen and (min-width:900px) {
+    .ubicacion-contenedor {
+        grid-template-columns: 20% 60% 20%
+    }
+  }
