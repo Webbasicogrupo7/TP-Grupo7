@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="styleSheet" href="./css/styles.css">
-    <!-- CSS media query on a link element -->
-    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="icon" href="./images/logo-empresa.png" size="16x16 24x24 32x32 48x48 64x64 256x256" type="image/vnd.microsoft.icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Landing Page Grupo-7</title>
+    <title>TP</title>
 </head>
 
 <body class="container-fluid">
@@ -23,66 +21,105 @@
         <!-- Menus de navegacion  -->
         <nav id="menu" class="justify-content-aroumd align-items-center w-100">
             <!--  " -->
-            <div class="dropdown">
-                <button id="boton1" class="btn btn-secondary dropdown-toggle  d-md-none" type="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+            <div id="dropd" class="dropdown d-md-flex justify-content-end">
+                <button id="boton1" class="btn btn-secondary dropdown-toggle  d-md-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Menu
                 </button>
 
                 <ul id="lista1" class="dropdown-menu aria-labelledby dropdownMenuButton1 d-md-none ">
                     <li><a class="dropdown-item .modifica_li " href="index.html">Inicio</a></li>
-                    <li><a class="dropdown-item " href="# ">Institucional</a></li>
-                    <li><a class="dropdown-item " href="# ">Equipo</a></li>
+                    <li><a class="dropdown-item " href="#">Institucional</a></li>
+                    <li><a class="dropdown-item " href="equipo.html">Equipo</a></li>
                     <li><a class="dropdown-item " href="cursos.html">Cursos</a></li>
-                    <li><a class="dropdown-item " href="# ">Inscripción</a></li>
+                    <li><a class="dropdown-item " href="#iconos-redes">Redes</a></li>
                     <li><a class="dropdown-item " href="consultas.html">Consultas</a></li>
                 </ul>
             </div>
             <ul id="lista2 " class="d-md-flex justify-content-sm-around align-items-center w-100 ">
                 <li><a id="inicio " href="index.html " class="nav-link border-0 ">Inicio</a></li>
-                <li><a id="institucional " href="# " class="nav-link border-0 ">Institucional</a></li>
-                <li><a id="equipo " href="# " class="nav-link border-0 ">Equipo</a></li>
+                <li><a id="institucional " href="#" class="nav-link border-0 ">Institucional</a></li>
+                <li><a id="equipo " href="./equipo.html" class="nav-link border-0 ">Equipo</a></li>
                 <li><a id="cursos " href="cursos.html" class="nav-link border-0 ">Cursos</a></li>
-                <li><a id="inscripcion " href="# " class="nav-link border-0 ">Inscripción</a></li>
+                <li><a id="redes " href="#iconos-redes" class="nav-link border-0 ">Redes</a></li>
                 <li><a id="consultas " href="consultas.html" class="nav-link border-0 ">Consultas</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- sector central de la página-->
-    <section id="principal " class="d-lg-flex border-0">
+    <section id="principal " class="d-lg-flex pt-5">
         <!-- Sector izquierdo -->
         <div id="sector_central " class="h-100 col-sm-12 col-md-12 col-lg-8 m-0 justify-content-center align-items-center pe-3 ps-3">
-            <p id="parrafo1 ">SECTOR CENTRAL</p>
-            <p>El arte urbano, conocido popularmente como Grafiti, tiene sus orígenes en el Imperio romano. Aunque pueda parecerte algo estrictamente moderno, en aquella época ya se utilizaban las pintadas en las paredes con un enfoque satírico o de crítica.
-                Se buscaba ridiculizar algún elemento de la sociedad o de la política de la época. Y, por tanto, constituía un atributo de denuncia.</p>
+            <div id="titulo">
+                <h1 id="nombre_empresa">*** Cursos Argentina ***</h1>
+                <h4 id="frase">¡ Nacimos para enseñar !</h4>
+            </div>
+            <div id="subsector1" class="d-md-flex mb-5">
 
-            <p>Ese carácter crítico se mantuvo hasta que, en la década de 1960, en las calles de Filadelfia, Cornbread empezó a pintar su nombre por las paredes para llamar la atención de una chica que le gustaba. La prensa afroamericana, poco a poco, se
-                hizo eco del fenómeno, que empezó a hacerse famoso e imitado. Posteriormente, al inicio de los 70, Taki empezó a darle forma al manejo del aerosol, definiendo poco a poco el estilo. Principalmente, eligiendo los lugares en los que pintar,
-                como los vagones del metro</p>
+                <!--<p id="parrafo1 ">SECTOR CENTRAL</p>-->
+                <div id=parrafos class="p-2">
+                    <h3>¡ Bienvenido !</h3>
+                    <p>El arte urbano, conocido popularmente como Grafiti, tiene sus orígenes en el Imperio romano. Aunque pueda parecerte algo estrictamente moderno, en aquella época ya se utilizaban las pintadas en las paredes con un enfoque satírico o
+                        de crítica. Se buscaba ridiculizar algún elemento de la sociedad o de la política de la época. Y, por tanto, constituía un atributo de denuncia.</p>
 
-            <p>De 1976 a mediados de los 80 transcurre la era Die Hard. Un movimiento mucho más masivo, que no dejaba de ensuciar y de pintar los trenes y los metros de las grandes ciudades. Hubo un boom y muchísimos jóvenes empezaron a practicar este arte
-                por las calles. Mantenía, entonces, toda su esencia vandálica y estaba especialmente perseguido por la Policía. Hasta el punto de que en muchos lugares de Estados Unidos se prohibió la venta de aerosoles a los jóvenes.</p>
 
-            <p>Finalmente, en los 90 aparece el movimiento del Tren Limpio. Los grafiteros tradicionales dejan de enfocarse tanto en los trenes y muchas nuevas generaciones de artistas pasan a los muros de las calles y a desarrollar nuevas formas de expresión.
-                Esta sería la etapa en la que seguimos hoy en día, en la que puedes encontrar una gran variedad de enfoques y de objetivos.</p>
+                </div>
+                <div id="div_dedo" class="">
+                    <img id="dedo" src="./images/dedo.jpg">
+                    <p><b>La más moderna tecnología, aplicada a tu preparación para el futuro</b></p>
+                </div>
+            </div>
 
+            <div id="separador"></div>
+
+            <div id="subsector2" class="d-md-flex mt-5">
+                <!--<p id="parrafo1 ">SECTOR CENTRAL</p>-->
+                <div id=parrafos class="p-2">
+                    <p>El arte urbano, conocido popularmente como Grafiti, tiene sus orígenes en el Imperio romano. Aunque pueda parecerte algo estrictamente moderno, en aquella época ya se utilizaban las pintadas en las paredes con un enfoque satírico o
+                        de crítica. Se buscaba ridiculizar algún elemento de la sociedad o de la política de la época. Y, por tanto, constituía un atributo de denuncia.</p>
+
+
+                </div>
+                <div id="div_tutor" class="">
+                    <img id="tutor" src="./images/tutor-en-linea.jpg">
+                    <p><b>Tutores en linea 24 x 365, para ayudarte en todo momento</b></p>
+                </div>
+            </div>
         </div>
         <!-- Sector derecho -->
         <div id="sector_lateral " class="h-auto col-sm-12 col-md-12 col-lg-4 m-0">
             <section id="atrapa_usuario" class="col-8 col-sm-8 col-md-11 col-lg-11 m-0  border-end-0 me-0 ">
                 <!-- Formulario atrapa usuarios -->
+                <!-- step 1 -->
                 <form id="form_regalo">
-                    <div id="">
+                    <div id="barra_de_progreso1">
+                        <div id="uno">
+                            <a href="#"><i class="las la-check-circle"></i></a>
+                        </div>
+                        <div class="border-0 m-0 pb-0">
+                            <label>---------></label>
+                        </div>
+                        <div>
+                            <a href="#"><i class="las la-check-circle"></i></a>
+                        </div>
+                        <div class="border-0 m-0 pb-0">
+                            <label>---------></label>
+                        </div>
+                        <div>
+                            <a href="#"><i class="las la-check-circle"></i></a>
+                        </div>
+                    </div>
+                    <div>
                         <div id="regalo" class="mb-5">
                             <legend class="mb-5 text-center text-white h-100">¡Tu Regalo !</legend>
                         </div>
                     </div>
+
                     <fieldset>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo electrónico</label>
                             <input type="email" id="email" class="form-control" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">Nunca compartiremos su email con terceros.</div>
+                            <div id="emailHelp" class="form-text">No compartiremos su email con terceros.</div>
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Teléfono</label>
@@ -94,22 +131,101 @@
                         </div>
                     </fieldset>
                     <div>
-                        <button type="button" id="btn-sig-form1" class="btn btn-outline-dark">siguiente</button>
+                        <button id="btn-next-form1" type="button" class="btn-form btn btn-outline-dark">siguiente</button>
                     </div>
                 </form>
+
+                <!-- step 2 -->
+
+                <form id="step2" class="d-none">
+                    <div id="barra_de_progreso2">
+                        <di id="uno">
+                            <a id="uno" href="#"><i class="las la-check-circle"></i></a>
+                        </di>
+                        <div class="border-0 m-0 pb-0">
+                            <label>---------></label>
+                        </div>
+                        <div id="dos">
+                            <a id="dos" href="#"><i class="las la-check-circle"></i></a>
+                        </div>
+                        <div class="border-0 m-0 pb-0">
+                            <label>---------></label>
+                        </div>
+                        <a id="tres" href="#"><i class="las la-check-circle"></i></a>
+                    </div>
+
+                    <fieldset class="">
+
+                        <div class="mb-3 h-100">
+                            <label class="h6" for="tipo_curso">Tipo de curso:</label>
+                            <select class="h6" id="tipo_curso" name="tipo_curso">
+                                <option value="oficina">Oficina</option>
+                                <option value="programación">Programación</option>
+                                <option value="idioma">Idioma</option>
+                        </div>
+                        <div id="coment" class="mb-3 align-baseline">
+                            
+                            <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
+                            <label for="comentario">Sus comentarios:</label>
+                        </div>
+                 </fieldset>  
+                    <div>
+                        <button id="btn-prev-form2" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
+                        <button id="btn-next-form2" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
+                    </div>
+                </form>
+                <!-- step 3 -->
+                <form id="step3" class="d-none">
+                    <div id="barra_de_progreso3">
+                        <div id="uno">
+                            <a href="#"><i class="las la-check-circle"></i></a>
+                        </div>
+                        <div class="border-0 m-0 pb-0">
+                            <label>---------></label>
+                        </div>
+                        <div id="dos">
+                            <a id="dos" href="#"><i class="las la-check-circle"></i></a>
+                        </div>
+                        <div class="border-0 m-0 pb-0">
+                            <label>---------></label>
+                        </div>
+                        <div id="tres">
+                            <a href="#"><i class="las la-check-circle"></i></a>
+                        </div>
+                    </div>
+                    <fieldset>
+                         
+                        <div class="mb-3">
+                            <label for="disclaimer" class="form-label">Permiso de uso</label>
+                            <textarea id="disclaimer" class="form-control" disabled cols="30" rows="7">Por la presente autorizo a "Grafiti Tour" a utilizar el material que envío a través del presente formulario. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque eos provident repudiandae quia accusantium eligendi architecto soluta dignissimos deserunt laborum cupiditate aspernatur eum alias maxime cum deleniti, tempora cumque recusandae!</textarea>
+                        </div>
+                      
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" id="check" class="form-check-input">
+                            <label class="form-check-label" for="check">Aceptar condiciones para enviar</label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <button id="btn-prev-form3" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
+                        <button id="btn-submit" type="submit" class="btn-form btn btn-outline-dark" disabled data-bs-toggle="modal" data-bs-target="#formModal">Enviar</button>
+
+                    </div>
+                </form>
+              
             </section>
-            <p>El arte urbano, conocido popularmente como Grafiti, tiene sus orígenes en el Imperio romano. Aunque pueda parecerte algo estrictamente moderno, en aquella época ya se utilizaban las pintadas en las paredes con un enfoque satírico o de crítica.
-                Se buscaba ridiculizar algún elemento de la sociedad o de la política de la época. Y, por tanto, constituía un atributo de denuncia.</p>
+            <!--Acá terminaba mi formulario-->
 
-            <p>Ese carácter crítico se mantuvo hasta que, en la década de 1960, en las calles de Filadelfia, Cornbread empezó a pintar su nombre por las paredes para llamar la atención de una chica que le gustaba. La prensa afroamericana, poco a poco, se
-                hizo eco del fenómeno, que empezó a hacerse famoso e imitado. Posteriormente, al inicio de los 70, Taki empezó a darle forma al manejo del aerosol, definiendo poco a poco el estilo. Principalmente, eligiendo los lugares en los que pintar,
-                como los vagones del metro</p>
+            <section id="api_temperatura">
+                <div id="div_temperatura">
+                    <h3>Temperatura en Buenos aires</h3>
+                    <h2 id="temperatura"> </h2>
+                    <img src="./images/Termometro.png">
 
-            <p>De 1976 a mediados de los 80 transcurre la era Die Hard. Un movimiento mucho más masivo, que no dejaba de ensuciar y de pintar los trenes y los metros de las grandes ciudades. Hubo un boom y muchísimos jóvenes empezaron a practicar este arte
-                por las calles. Mantenía, entonces, toda su esencia vandálica y estaba especialmente perseguido por la Policía. Hasta el punto de que en muchos lugares de Estados Unidos se prohibió la venta de aerosoles a los jóvenes.</p>
+                </div>
+            </section>
+            <p></p>
 
-            <p>Finalmente, en los 90 aparece el movimiento del Tren Limpio. Los grafiteros tradicionales dejan de enfocarse tanto en los trenes y muchas nuevas generaciones de artistas pasan a los muros de las calles y a desarrollar nuevas formas de expresión.
-                Esta sería la etapa en la que seguimos hoy en día, en la que puedes encontrar una gran variedad de enfoques y de objetivos.</p>
         </div>
     </section>
     <!--Pie de página-->
@@ -121,8 +237,10 @@
             <a href="https://github.com/Webbasicogrupo7/TP-Grupo7" target="blanck" class="github"><i class="lab la-github"></i></a>
         </div>
     </footer>
-    <!-- CSS media query on a link element -->
-    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+    <script src="./script/formTresPasos.js"></script>
+    <script src="./script/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js " integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N " crossorigin="anonymous "></script>
 </body>
 
