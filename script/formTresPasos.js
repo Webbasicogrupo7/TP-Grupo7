@@ -4,6 +4,14 @@ console.log(email);
 const phone = document.getElementById("phone");
 const fullName = document.getElementById("fullName");
 //const locationInput = document.getElementById("location");
+
+
+const email = document.getElementById("email");
+
+const phone = document.getElementById("phone");
+const fullName = document.getElementById("fullName");
+
+
 const tipoCurso = document.getElementById("tipo_curso");
 
 console.log(typeof(tipoCurso));

@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="styleSheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/cursos.css">
+    <link rel="stylesheet" href="./css/consultas.css">
     <link rel="icon" href="./images/logo-empresa.png" size="16x16 24x24 32x32 48x48 64x64 256x256" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>TP</title>
 </head>
 
-<body class="container-fluid  min-vh-100">
-    <!--class="d-md-flex" justify-content-between-->
+<body class="container-fluid">
+    <!--Encabezado de página-->
     <header id="encabezado1" class="d-flex justify-content-around align-items-center">
-        <!--  -->
+        <!-- Icono de la Empresa  -->
         <img id="icono" src="./images/logo-empresa.png"></img>
 
         <!--class=" navbar-nav d-md-block .d-xxl-none"  -->
         <nav id="menu" class="justify-content-aroumd align-items-center w-100">
-            <!--  " -->
+            <!-- Menú desplegable -->
             <div class="dropdown">
                 <button id="boton1" class="btn btn-secondary dropdown-toggle  d-md-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Menu
+                    Menú
                 </button>
 
                 <ul id="lista1" class="dropdown-menu aria-labelledby dropdownMenuButton1 d-lg-none ">
@@ -33,7 +32,7 @@
                     <li><a class="dropdown-item " href="# ">Institucional</a></li>
                     <li><a class="dropdown-item " href="equipo.html">Equipo</a></li>
                     <li><a class="dropdown-item " href="cursos.html">Cursos</a></li>
-                    <li><a class="dropdown-item " href="#iconos-redes ">Redes</a></li>
+                    <li><a class="dropdown-item " href="#iconos-redes">Redes</a></li>
                     <li><a class="dropdown-item " href="consultas.html">Consultas</a></li>
                 </ul>
             </div>
@@ -42,120 +41,95 @@
                 <li><a id="institucional " href="# " class="nav-link border-0 ">Institucional</a></li>
                 <li><a id="equipo " href="equipo.html" class="nav-link border-0 ">Equipo</a></li>
                 <li><a id="cursos " href="cursos.html" class="nav-link border-0 ">Cursos</a></li>
-                <li><a id="redes " href="#iconos-redes" class="nav-link border-0 ">Redes</a></li>
+                <li><a id="redes " href="#iconos-redes " class="nav-link border-0 ">Redes</a></li>
                 <li><a id="consultas " href="consultas.html" class="nav-link border-0 ">Consultas</a></li>
             </ul>
         </nav>
     </header>
-    <!-- seccion central -->
-    <section id="principal " class="d-md-flex me-0 pe-0 border-end-0 justify-content-center">
-        <div id="sector_central" class="h-100 col-sm-12 col-md-12 col-lg-12 m-0 justify-content-center align-items-center ">
-            <!-- <p id="parrafo1 ">CURSOS QUE SE DICTAN</p> -->
-            <h2 id="tituloSeccionOficina">Cursos de oficina</h2>
-            <div class="cOficina" id="cOficina">
-                <button class="botonImagen">                  
-                    <img class="imgCursos" id="of1" src="./images/cursos/oficina1_400x225.png" alt="...">
-                </button>
+    <!-- Seccion central de la página-->
+    <section id="principal " class="d-md-flex">
+        <div id="sector_central " class="h-100 col-sm-12 col-md-12 col-lg-12 m-0 justify-content-center align-items-center ">
+            <p id="parrafo1 ">FORMULARIO DE CONSULTAS</p>
 
-                <button class="botonImagen">
-                    <img class="imgCursos" id="of2" src="./images/cursos/oficina2_400x225.png" alt="...">
-                </button>
-                <button class="botonImagen">
-                    <img class="imgCursos" id="of3" src="./images/cursos/oficina3_400x225.png" alt="...">
-                </button>
+            <form class="formulario" action="mostrarDatos.html" targer="_blank">
+                <table id="tabla">
+                    <tr>
+                        <td class="col1">
+                            <label for="apellido">Apellido:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="apellido" placeholder="Ingrese su Apellido...">
+                        </td class="col2">
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="nombre" placeholder="Ingrese su Nombre...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Correo Electrónico:</label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" placeholder="Ingrese su correo electrónico...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fNacimiento">Fecha Nacimiento:</label>
+                        </td>
+                        <td>
+                            <input type="date" name="fechaNacimiento">
+                        </td>
+                    </tr>
+                    <!--     
+                <p>Género:
+                    <input type="radio" name="sexo" value="Hombre" checked>Hombre
+                    <input type="radio" name="sexo" value="Mujer">Mujer
+                </p><br> -->
+                    <tr>
+                        <td>
+                            <p>¿Cómo nos conoce?:
+                        </td>
+                        <td>
 
-                <button class="botonImagen">
-                    <img class="imgCursos" id="of4" src="./images/cursos/oficina4_400x225.png" alt="...">
-                </button>
-            </div>
-            <div id="textoOficina">
-                <h1 id="titCursoOfic">NOMBRE DEL CURSO</h1>
-                <h2>Horarios</h2>
-                <p id="horaOfic">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <h2>Contenidos mínimos</h2>
-                <p id="contOfic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores, quis illo eligendi recusandae incidunt vitae in nesciunt fugit blanditiis inventore. Assumenda iure a natus doloribus magnam repellat velit quisquam! Obcaecati quae
-                    quas tempora expedita id eum ducimus cum, dicta consectetur quam perspiciatis corrupti eos? Inventore rem, hic veniam tempore distinctio voluptatem laudantium sequi doloribus vel, omnis quia, numquam atque? Tempora, in! Vel inventore,
-                    assumenda iste esse nostrum cum blanditiis possimus libero illum praesentium fuga ad voluptates totam itaque repellendus officiis hic nesciunt modi velit fugiat sapiente, consectetur dolore? Consequuntur.</p>
+                            <input type="checkbox" name="conocimiento" value="internet">Internet <br>
+                            <input type="checkbox" name="conocimiento" value="publicidad">Publicidad<br>
+                            <input type="checkbox" name="conocimiento" value="amigos">Referencias de amigos<br>
+                            <input type="checkbox" name="conocimiento" value="otros">Otros
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="consulta">Consulta:</label>
+                        </td>
+                        <td>
+                            <input type="textArea" name="consulta" rows="4">
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Enviar">
+            </form>
 
-                <a href="./cursos.html"> <button id="volverCursos">VOLVER</button></a>
-            </div>
-
-            <br><br>
-            <h2 id="tituloSeccionProgramacion">Cursos de Programación</h2>
-            <div class="cProgramacion" id="cProgramacion">
-                <button class="botonImagen">
-                    <img class="imgCursos" id="prg1" src="./images/cursos/prog1_400x225.png" alt="...">
-                </button>
-
-                <button class="botonImagen">
-                    <img class="imgCursos" id="prg2" src="./images/cursos/prog2_400x225.png" alt="...">
-                </button>
-                <button class="botonImagen">
-                    <img class="imgCursos" id="prg3" src="./images/cursos/prog3_400x225.png" alt="...">
-                </button>
-
-                <button class="botonImagen">
-                    <img class="imgCursos" id="prg4" src="./images/cursos/prog4_400x225.png" alt="...">
-                </button>
-            </div>
-            <div id="textoProgramacion">
-                <h1 id="titCursoPrg">NOMBRE DEL CURSO</h1>
-                <h2>Horarios</h2>
-                <p id="horaPrg">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <h2>Contenidos mínimos</h2>
-                <p id="contPrg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores, quis illo eligendi recusandae incidunt vitae in nesciunt fugit blanditiis inventore. Assumenda iure a natus doloribus magnam repellat velit quisquam! Obcaecati quae
-                    quas tempora expedita id eum ducimus cum, dicta consectetur quam perspiciatis corrupti eos? Inventore rem, hic veniam tempore distinctio voluptatem laudantium sequi doloribus vel, omnis quia, numquam atque? Tempora, in! Vel inventore,
-                    assumenda iste esse nostrum cum blanditiis possimus libero illum praesentium fuga ad voluptates totam itaque repellendus officiis hic nesciunt modi velit fugiat sapiente, consectetur dolore? Consequuntur.</p>
-
-                <a href="./cursos.html"> <button id="volverCursos">VOLVER</button></a>
-            </div>
-            <br><br>
-            <h2 id="tituloSeccionIdiomas">Cursos de Idiomas</h2>
-            <div class="cIdioma" id="cIdioma">
-                <button class="botonImagen">
-                    <img class="imgCursos" id="idiom1" src="./images/cursos/idioma1_400x225.png" alt="...">
-                </button>
-
-                <button class="botonImagen">
-                    <img class="imgCursos" id="idiom2" src="./images/cursos/idioma2_400x225.png" alt="...">
-                </button>
-                <button class="botonImagen">
-                    <img class="imgCursos" id="idiom3" src="./images/cursos/idioma3_400x225.png" alt="...">
-                </button>
-
-                <button class="botonImagen">
-                    <img class="imgCursos" id="idiom4" src="./images/cursos/idioma4_400x225.png" alt="...">
-                </button>
-            </div>
-            <div id="textoIdioma">
-                <h1 id="titCursoIdioma">NOMBRE DEL CURSO</h1>
-                <h2>Horarios</h2>
-                <p id="horaIdioma">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <h2>Contenidos mínimos</h2>
-                <p id="contIdioma">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores, quis illo eligendi recusandae incidunt vitae in nesciunt fugit blanditiis inventore. Assumenda iure a natus doloribus magnam repellat velit quisquam! Obcaecati quae
-                    quas tempora expedita id eum ducimus cum, dicta consectetur quam perspiciatis corrupti eos? Inventore rem, hic veniam tempore distinctio voluptatem laudantium sequi doloribus vel, omnis quia, numquam atque? Tempora, in! Vel inventore,
-                    assumenda iste esse nostrum cum blanditiis possimus libero illum praesentium fuga ad voluptates totam itaque repellendus officiis hic nesciunt modi velit fugiat sapiente, consectetur dolore? Consequuntur.</p>
-
-                <a href="./cursos.html"> <button id="volverCursos">VOLVER</button></a>
-            </div>
-            <br><br>
         </div>
 
+
+
     </section>
-    <!--class="col-12 bg-black h-25 col-12"-->
+    <!--Pie de página-->
     <footer>
         <div id="iconos-redes">
             <a href="#" class="facebook"><i class="lab la-facebook"></i></a>
             <a href="#" class="twitter"><i class="lab la-twitter"></i></a>
             <a href="#" class="linkedin"><i class="lab la-linkedin"></i></a>
-            <a href="https://github.com/Webbasicogrupo7/TP-Grupo7" target="blanck" class="github"><i
-                    class="lab la-github"></i></a>
+            <a href="https://github.com/Webbasicogrupo7/TP-Grupo7" target="blanck" class="github"><i class="lab la-github"></i></a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js " integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N " crossorigin="anonymous "></script>
 
-
-    <script src="./script/cursos.js"></script>
 
 
 </body>

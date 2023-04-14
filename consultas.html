@@ -27,7 +27,7 @@
                     Menú
                 </button>
 
-                <ul id="lista1" class="dropdown-menu aria-labelledby dropdownMenuButton1 d-lg-none ">
+                <ul id="lista1" class="dropdown-menu aria-labelledby dropdownMenuButton1 d-md-none ">
                     <li><a class="dropdown-item .modifica_li " href="index.html">Inicio</a></li>
                     <li><a class="dropdown-item " href="# ">Institucional</a></li>
                     <li><a class="dropdown-item " href="equipo.html">Equipo</a></li>
@@ -48,74 +48,82 @@
     </header>
     <!-- Seccion central de la página-->
     <section id="principal " class="d-md-flex">
+
         <div id="sector_central " class="h-100 col-sm-12 col-md-12 col-lg-12 m-0 justify-content-center align-items-center ">
             <p id="parrafo1 ">FORMULARIO DE CONSULTAS</p>
 
-            <form class="formulario" action="mostrarDatos.html" targer="_blank">
-                <table id="tabla">
-                    <tr>
-                        <td class="col1">
-                            <label for="apellido">Apellido:</label>
-                        </td>
-                        <td>
-                            <input type="text" name="apellido" placeholder="Ingrese su Apellido...">
-                        </td class="col2">
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="nombre">Nombre:</label>
-                        </td>
-                        <td>
-                            <input type="text" name="nombre" placeholder="Ingrese su Nombre...">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="email">Correo Electrónico:</label>
-                        </td>
-                        <td>
-                            <input type="email" name="email" placeholder="Ingrese su correo electrónico...">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="fNacimiento">Fecha Nacimiento:</label>
-                        </td>
-                        <td>
-                            <input type="date" name="fechaNacimiento">
-                        </td>
-                    </tr>
-                    <!--     
+
+            <div id="sector_central " class="h-100 col-sm-12 col-md-12 col-lg-12 m-0 justify-content-center align-items-center ">
+
+                <h4 id="parrafo1 ">FORMULARIO DE CONSULTAS</h4>
+
+                <div class="gridUbicacFormulario">
+
+                    <form class="formulario" action="mostrarDatos.html" targer="_blank">
+                        <table id="tabla">
+                            <tr>
+                                <td class="col1">
+                                    <label for="apellido">Apellido:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="apellido" placeholder="Ingrese su Apellido...">
+                                </td class="col2">
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="nombre">Nombre:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="nombre" placeholder="Ingrese su Nombre...">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Correo Electrónico:</label>
+                                </td>
+                                <td>
+                                    <input type="email" name="email" placeholder="Ingrese su correo electrónico...">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="fNacimiento">Fecha Nacimiento:</label>
+                                </td>
+                                <td>
+                                    <input type="date" name="fechaNacimiento">
+                                </td>
+                            </tr>
+                            <!--     
                 <p>Género:
                     <input type="radio" name="sexo" value="Hombre" checked>Hombre
                     <input type="radio" name="sexo" value="Mujer">Mujer
                 </p><br> -->
-                    <tr>
-                        <td>
-                            <p>¿Cómo nos conoce?:
-                        </td>
-                        <td>
+                            <tr>
+                                <td>
+                                    <p>¿Cómo nos conoce?:
+                                </td>
+                                <td>
 
-                            <input type="checkbox" name="conocimiento" value="internet">Internet <br>
-                            <input type="checkbox" name="conocimiento" value="publicidad">Publicidad<br>
-                            <input type="checkbox" name="conocimiento" value="amigos">Referencias de amigos<br>
-                            <input type="checkbox" name="conocimiento" value="otros">Otros
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="consulta">Consulta:</label>
-                        </td>
-                        <td>
-                            <input type="textArea" name="consulta" rows="4">
-                        </td>
-                    </tr>
-                </table>
-                <input type="submit" value="Enviar">
-            </form>
+                                    <input type="checkbox" name="conocimiento" value="internet">Internet <br>
+                                    <input type="checkbox" name="conocimiento" value="publicidad">Publicidad<br>
+                                    <input type="checkbox" name="conocimiento" value="amigos">Referencias de amigos<br>
+                                    <input type="checkbox" name="conocimiento" value="otros">Otros
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="consulta">Consulta:</label>
+                                </td>
+                                <td>
+                                    <!-- <input type="textarea" name="consulta"  cols="50"> -->
+                                    <textarea name="consulta" rows="4" cols="50" placeholder="Ingrese aquí su consulta..."></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Enviar">
+                    </form>
 
-        </div>
-
+                </div>
 
 
     </section>

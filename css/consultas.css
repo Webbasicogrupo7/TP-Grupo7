@@ -11,7 +11,9 @@ label {
 input[type=text],
 input[type=date],
 input[type=email],
-input[type=textArea],
+
+/* input[type=textArea], */
+
 select {
     width: 95%;
     /*80 se ve bien en celulares 100 en desktop*/
@@ -39,7 +41,6 @@ input[type=textArea] {
 
 input[type=text]:hover,
 input[type=date]:hover,
-input[type=textArea]:hover,
 input[type=email]:hover,
 input[type=checkbox]:hover {
     border: 4vw;
