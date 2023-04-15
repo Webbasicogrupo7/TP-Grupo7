@@ -43,9 +43,30 @@ button {
     margin-top: 50px;
 }
 
+button:active {
+    box-shadow: none;
+}
+
 button:hover {
     background-color: rgb(20, 136, 136);
     color: white;
+}
+
+h2 {
+    background-color: rgb(159, 189, 105);
+    border-style: double;
+    font-size: large;
+    width: 70%;
+    /* height:20vh; */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 15%;
+    padding: 0%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 table {
